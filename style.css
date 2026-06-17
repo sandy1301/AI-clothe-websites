@@ -1,1 +1,237 @@
-body{font-family:Arial} .hero{padding:120px;background:#222;}
+/* =========================
+   LUXE & CO - HOME PAGE STYLE
+   Amazon + Zara Luxury Look
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fff;
+    margin:0;
+    padding:0;
+}
+
+/* =========================
+   NAVBAR (HOME)
+========================= */
+
+.navbar{
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(10px);
+    padding:15px 0;
+    transition:0.4s;
+}
+
+.navbar-brand{
+    color:#fff !important;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.navbar .nav-link{
+    color:#fff !important;
+    margin:0 10px;
+    font-size:14px;
+    text-transform:uppercase;
+    position:relative;
+}
+
+.navbar .nav-link:hover{
+    color:#c5a059 !important;
+}
+
+.navbar .nav-link::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#c5a059;
+    bottom:-3px;
+    left:0;
+    transition:0.4s;
+}
+
+.navbar .nav-link:hover::after{
+    width:100%;
+}
+
+/* =========================
+   ICONS (HEART + CART)
+========================= */
+
+.icon-btn{
+    color:#fff;
+    font-size:18px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.icon-btn:hover{
+    color:#c5a059;
+    transform:scale(1.2);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1521334884684-d80222895322") center/cover;
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.hero h5{
+    color:#c5a059;
+    letter-spacing:3px;
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero p{
+    color:#ddd;
+}
+
+/* =========================
+   GOLD BUTTON (MAIN CTA)
+========================= */
+
+.btn-gold{
+    background:#c5a059;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:50px;
+    border:none;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.btn-gold:hover{
+    background:#a8843d;
+    transform:translateY(-5px);
+}
+
+/* =========================
+   CATEGORY CARDS
+========================= */
+
+.category-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.category-card img{
+    width:100%;
+    transition:0.5s;
+}
+
+.category-card:hover img{
+    transform:scale(1.1);
+}
+
+.category-card .overlay{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:rgba(0,0,0,0.55);
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+}
+
+/* =========================
+   FEATURE BOX (WHY CHOOSE US)
+========================= */
+
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter{
+    background:#111;
+    color:#fff;
+    padding:80px 0;
+}
+
+.newsletter input{
+    padding:12px;
+    border-radius:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111;
+    color:#aaa;
+    padding:60px 0;
+}
+
+footer h4, footer h5{
+    color:#fff;
+}
+
+footer a{
+    color:#aaa;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+footer a:hover{
+    color:#c5a059;
+}
+
+.social-icon{
+    font-size:20px;
+    margin:0 8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.social-icon:hover{
+    color:#c5a059;
+    transform:scale(1.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero{
+    text-align:center;
+}
+
+}
